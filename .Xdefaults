@@ -4,31 +4,23 @@
 *background: #222222
 *foreground: #777777
 
-! Default
-! 0: black
-*color0:  #222222
-*color8:  #222222
-! 1: red
-*color1:  #9f6767
-*color9:  #9f6767
-! 2: green
-*color2:  #92ac68
-*color10: #92ac68
-! 3: yellow
-*color3:  #d0d293
-*color11: #d0d293
-! 4: blue
-*color4:  #9aacc3
-*color12: #9aacc3
-! 5: magenta
-*color5:  #bb77a4
-*color13: #bb77a4
-! 6: cyan
-*color6:  #77bbb5
-*color14: #77bbb5
-! 7: white
-*color7:  #777777
-*color15: #777777
+*color0:    #222222
+*color1:    #8b3e2f
+*color2:    #526f33
+*color3:    #665847
+*color4:    #4a708b
+*color5:    #7a378b
+*color6:    #528b8b
+*color7:    #999999
+
+*color8:    #4c4c4c
+*color9:    #d75f00
+*color10:   #cee318
+*color11:   #eee685
+*color12:   #9ac0cd
+*color13:   #9f79ee
+*color14:   #79cdcd
+*color15:   #e8e9ca
 
 !------------------------------------------------------------------------------
 ! u r x v t
@@ -39,3 +31,6 @@ URxvt*urlLauncher:         firefox
 URxvt*scrollBar:        false
 URxvt*scrollBar_right:        true
 URxvt*scrollColor:        #000000
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+URxvt.iso14755: False
+URxvt.perl-ext-common: default,clipboard
