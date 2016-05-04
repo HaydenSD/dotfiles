@@ -30,7 +30,7 @@ font pango:System San Fransisco Display 10
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec urxvt
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -169,14 +169,14 @@ bindsym XF86MonBrightnessDown exec "xbacklight -5"
 
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+ unmute
 bindsym XF86AudioLowerVolume exec amixer -q set Master 5%- unmute
-bindsym XF86AudioMute exec amixer -q set Master mute
+bindsym XF86AudioMute exec amixer -q set Master toggle
 bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 for_window [class=".*"] border pixel 0
 
-gaps inner 15
+gaps inner 5
 gaps outer 5
 smart_gaps 1
 exec_always compton
@@ -200,9 +200,9 @@ bar {
     }
 }
 
-bindsym $mod+shift+x exec i3lock-fancy -p -g
+bindsym $mod+shift+x exec i3lock
 
 # Turn off tap click (single finger, two finger, and 3 finger)
  exec synclient TapButton1=0
 
-exec_always feh --bg-scale /home/haydensd/Downloads/chicago.jpg
+exec_always feh --bg-scale /home/haydensd/Downloads/wallpaper1.jpg
